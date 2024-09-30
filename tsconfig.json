@@ -1,0 +1,46 @@
+{
+  "compilerOptions": {
+    "target": "es6",
+    "lib": ["dom", "dom.iterable", "esnext"],
+    "allowJs": true,
+    "skipLibCheck": true,
+    "strict": false,
+    "forceConsistentCasingInFileNames": true,
+    "noEmit": true,
+    "esModuleInterop": true,
+    "module": "esnext",
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "jsx": "preserve",
+    "baseUrl": ".",
+    "paths": {
+      "@components/*": ["./src/components/*"],
+      "@layouts/*": ["./src/layouts/*"],
+      "@actions/*": ["src/store/actions/*"],
+      "@utils/*": ["./src/utils/*"],
+      "@store/*": ["./src/store/*"],
+      "@services/*": ["./src/services/*"],
+      "@slices/*": ["./src/store/slices/*"],
+      "@apis/*": ["./src/apis/*"],
+      "@hocs/*": ["./src/hocs/*"],
+      "@hooks/*": ["./src/hooks/*"],
+      "@features/*": ["./src/features/*"],
+      "@resources/*": ["./src/resources/*"],
+      "@validates/*": ["/.src/validates/*"],
+      "@type/*": ["src/types/*"],
+      "@contracts/*": ["./src/contracts/*"]
+    },
+    "incremental": true
+  },
+  "include": [
+    "next-env.d.ts",
+    "**/*.ts",
+    "**/*.tsx",
+    "**/**/*.ts",
+    "src/services/crop-image.js",
+    "declareModule.d.ts",
+    "src/utils/cropImage.js"
+  ],
+  "exclude": ["node_modules"]
+}

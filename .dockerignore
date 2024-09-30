@@ -1,0 +1,4 @@
+Dockerfile
+Jenkinsfile
+*.groovy
+node_modules
